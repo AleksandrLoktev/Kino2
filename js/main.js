@@ -82,6 +82,8 @@
     // Code to run when the document is ready.
     console.info('Avis Drupal 8 theme starter kit.');
 
+    $('.poster-wrap a').fancybox();
+
     //buffer equal footer call
     footerHeight();
 
@@ -98,12 +100,13 @@
     if(window.innerWidth < 1024) {
       $('#menu').mmenu({
         "counters": false,
+        "clone": true,
         "extensions": [
           "pagedim-black"
         ],
         "offCanvas": {
           "position": "right",
-          "zposition": "front",
+          "zposition": "front"
         }
       });
     }
@@ -114,6 +117,10 @@
     //call change top menu background color
     if(window.innerWidth > 1024) {
       scrollTop(200);
+
+      // Parallax effect for sidebar
+      var parallaxTop = $(document).scrollTop();
+      $('.particular-film__sidebar-wrap').css({'margin-top': -(parallaxTop/2.5) - 135});
     }
 
     if(window.innerWidth <= 1024) {
@@ -128,7 +135,28 @@
   });
 
   $(window).resize(function () {
+    if(window.innerWidth < 1024) {
+      $('#menu').mmenu({
+        "counters": false,
+        "clone": true,
+        "extensions": [
+          "pagedim-black"
+        ],
+        "offCanvas": {
+          "position": "right",
+          "zposition": "front"
+        }
+      });
 
+        // Parallax effect for sidebar
+        var parallaxTop = $(document).scrollTop();
+        $('.particular-film__sidebar-wrap').css({'margin-top': "20px"});
+    }
+
+    if(window.innerWidth > 1024) {
+ // Parallax effect for sidebar
+        $('.particular-film__sidebar-wrap').css({'margin-top': "-135px"});
+    }
     //buffer equal footer call
     footerHeight();
   });

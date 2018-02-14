@@ -1,0 +1,65 @@
+.player-wrap {
+  margin-top: 30px;
+  background-color: #f7f7f7;
+
+  iframe {
+    width: 100%;
+  }
+
+  .player-film-info {
+    padding: 10px 35px 14px 25px;
+    @include clearfix;
+    @include breakpoint($not-desktop) {
+      padding: 15px;
+    }
+  }
+
+  .player-film-info__title {
+    margin-bottom: 10px;
+    font-family: $roboto;
+    font-size: 15px;
+    font-weight: 900;
+    color: #444;
+    @include breakpoint(0px 555px) {
+      text-align: center;
+    }
+  }
+
+  .player-film-rating-stars {
+    float: left;
+    @include breakpoint(0px 555px) {
+      float: none;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .player-film-rating-num-wrap {
+    display: flex;
+    align-items: center;
+    float: right;
+    font-size: 0;
+    @include breakpoint(0px 555px) {
+      margin-top: 7px;
+      float: none;
+      justify-content: center;
+    }
+  }
+
+  .player-film-rating-num, .player-film-rating-num-sum {
+    display: inline-block;
+  }
+
+  .player-film-rating-num {
+    margin-right: 12px;
+    font-family: $roboto_regular;
+    font-size: 24px;
+    color: #2b9f3f;
+  }
+
+  .player-film-rating-num-sum {
+    font-family: $roboto_regular;
+    font-size: 14px;
+    color: #444;
+  }
+}

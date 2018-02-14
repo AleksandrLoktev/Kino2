@@ -1,0 +1,44 @@
+.particular-film__content-wrap {
+  margin-top: 36px;
+  margin-bottom: 80px;
+  @include span(5 of 8 .4 last);
+  @include clearfix;
+  @include breakpoint($not-desktop) {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    @include span(8 of 8 0);
+  }
+}
+
+.particular-film__content-body {
+  @include body;
+}
+
+.particular-film__content-title-en {
+  margin-top: 2px;
+  font-family: $roboto_regular;
+  font-size: 14px;
+  color: #666;
+}
+
+.player-film-rating-stars {
+  @include clearfix;
+  @include breakpoint($mobile) {
+    display: block;
+  }
+}
+
+.particular-film__content-body {
+  margin-top: 22px;
+
+  table {
+    @include table;
+
+    td:first-of-type {
+      padding-right: 25px;
+      @include breakpoint($desktop) {
+        width: 215px;
+      }
+    }
+  }
+}

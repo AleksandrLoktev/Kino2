@@ -113,6 +113,10 @@
   text-decoration: none;
   color: #fff;
   @include transition(background-color, .3s);
+  @include breakpoint($not-desktop) {
+    font-size: 14px;
+  }
+
   @include breakpoint($mobile) {
     width: 100%;
     padding: 17px 15px 15px;
@@ -166,5 +170,52 @@
     @include blueButton;
     width: 100%;
   }
+}
 
+@mixin body {
+  font-family: $roboto_regular;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #444;
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+}
+
+@mixin table {
+  width: 100%;
+  margin-top: 28px;
+  border: 1px solid #f7f7f7;
+  font-family: $roboto_regular;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  tr {
+    &:not(:nth-of-type(2n)) {
+      background-color: #f7f7f7;
+    }
+
+    td {
+      padding: 6px 0;
+      font-family: $roboto_regular;
+      font-size: 14px;
+
+      &:not(:nth-of-type(2n)) {
+        text-align: right;
+        color: #868686;
+      }
+
+      &:nth-of-type(2n) {
+        text-align: left;
+        color: #333;
+      }
+    }
+  }
 }

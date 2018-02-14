@@ -50,12 +50,14 @@
     @include breakpoint($tablet) {
       background-position: center center !important;
       padding-top: 173px;
+      min-height: 400px;
     }
 
     @include breakpoint($mobile) {
       background-position: calc(50% - 265px) center !important;
       padding-top: 115px;
       padding-bottom: 120px;
+      min-height: 400px;
     }
   }
 
@@ -261,8 +263,9 @@
   font-size: 0;
 
   & > * {
-    @include breakpoint($not-mobile) {
-      display: inline-block;
+    display: inline-block;
+    @include breakpoint(0px 400px) {
+      display: block;
     }
   }
 
@@ -272,8 +275,9 @@
 }
 
 .wrap-about-film {
-  @include breakpoint($not-mobile) {
-    margin-right: 32px;
+  margin-right: 32px;
+  @include breakpoint(0px 400px) {
+    margin-right: 0;
   }
 }
 
