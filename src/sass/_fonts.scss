@@ -124,19 +124,19 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 /* ============================================  icomoon  =========================================== */
 
 @font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon/icomoon.eot?pzt28h');
-  src: url('../fonts/icomoon/icomoon.eot?pzt28h#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon/icomoon.ttf?pzt28h') format('truetype'),
-  url('../fonts/icomoon/icomoon.woff?pzt28h') format('woff'),
-  url('../fonts/icomoon/icomoon.svg?pzt28h#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?pzt28h");
+  src: url("../fonts/icomoon/icomoon.eot?pzt28h#iefix") format("embedded-opentype"),
+  url("../fonts/icomoon/icomoon.ttf?pzt28h") format("truetype"),
+  url("../fonts/icomoon/icomoon.woff?pzt28h") format("woff"),
+  url("../fonts/icomoon/icomoon.svg?pzt28h#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

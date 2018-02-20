@@ -73,7 +73,7 @@
     line-height: 30px;
     text-align: center;
     vertical-align: middle;
-    color: #fff;
+    color: $white;
     @include brAll(50%);
   }
 }
@@ -100,7 +100,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      content: '';
+      content: "";
       background-color: rgba(0, 0, 0, .4);
       opacity: 0;
       @include transition(all, 1s);

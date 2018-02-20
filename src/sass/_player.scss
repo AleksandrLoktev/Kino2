@@ -19,7 +19,7 @@
     font-family: $roboto;
     font-size: 15px;
     font-weight: 900;
-    color: #444;
+    color: $charcoal;
     @include breakpoint(0px 555px) {
       text-align: center;
     }
@@ -60,6 +60,6 @@
   .player-film-rating-num-sum {
     font-family: $roboto_regular;
     font-size: 14px;
-    color: #444;
+    color: $charcoal;
   }
 }

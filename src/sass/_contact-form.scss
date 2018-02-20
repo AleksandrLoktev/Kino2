@@ -15,11 +15,11 @@
       z-index: 8;
       top: calc(32%);
       left: calc(50% + 83px);
-      content: '\e90c';
-      font-family: 'icomoon';
+      content: "\e90c";
+      font-family: "icomoon";
       font-size: 19px;
       cursor: pointer;
-      color: #fff;
+      color: $white;
     }
 
     &:hover input {
@@ -49,10 +49,10 @@
 
 .contact-form__title {
   margin-bottom: 2px;
-  font-family: "RobotoBlack", sans-serif;
+  font-family: $roboto_black;
   font-size: 49px;
   text-transform: uppercase;
-  color: #fff;
+  color: $white;
   @include breakpoint($mobile) {
     font-size: 30px;
   }

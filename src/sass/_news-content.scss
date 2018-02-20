@@ -70,10 +70,10 @@
 
       &:checked + label {
         background-color: $blue;
-        color: #fff;
+        color: $white;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -3px;
           left: calc(50% - 7px);
@@ -93,7 +93,7 @@
       cursor: pointer;
       font-family: $roboto_regular;
       font-size: 14px;
-      color: rgba(16, 26, 152, .7);
+      color: $blue;
       text-transform: uppercase;
     }
 
@@ -125,14 +125,14 @@
         bottom: 0;
         right: 0;
         z-index: -1;
-        content: '';
+        content: "";
         display: inline-block;
         width: 0;
         height: 0;
-        border-top: 13px solid #DDDDDD;
-        border-bottom: 13px solid #fff;
-        border-left: 13px solid #DDDDDD;
-        border-right: 13px solid #fff;
+        border-top: 13px solid $gray;
+        border-bottom: 13px solid $white;
+        border-left: 13px solid $gray;
+        border-right: 13px solid $white;
       }
 
       a:hover {
@@ -195,7 +195,7 @@
 .news__title {
   font-family: $roboto_regular;
   font-size: 16px;
-  color: #444444;
+  color: $charcoal;
   @include transition(color, .3s);
 }
 
@@ -207,7 +207,7 @@
   &:before {
     position: relative;
     top: 2px;
-    content: '\e906';
+    content: "\e906";
     display: inline-block;
     margin-right: 8px;
     font-family: "icomoon";

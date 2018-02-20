@@ -1,16 +1,16 @@
 body {
   font: normal 15px/1.2 $tahoma;
-  background-color: #fff;
+  background-color: $white;
   min-width: 320px;
 }
 
 .container {
   @include clearfix;
   @include container;
-  @include breakpoint (($tablet)) {
+  @include breakpoint ($tablet) {
     padding: 0 35px;
   }
-  @include breakpoint (($mobile)) {
+  @include breakpoint ($mobile) {
     padding: 0 20px;
   }
 }
@@ -70,11 +70,11 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   &::selection {
     background: #616D84; /* WebKit/Blink Browsers */
-    color: #fff;
+    color: $white;
   }
   &::-moz-selection {
     background: #616D84; /* Gecko Browsers */
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -107,7 +107,7 @@ textarea {
     .flex-prev, .flex-next {
 
       &:before {
-        content: '\e90a';
+        content: "\e90a";
         display: inline-block;
         font-family: "icomoon";
         font-size: 53px;

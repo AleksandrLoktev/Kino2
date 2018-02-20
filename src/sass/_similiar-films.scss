@@ -23,6 +23,7 @@
   line-height: 1.4;
   @include breakpoint($not-desktop) {
     text-align: center;
+    margin-bottom: 13px;
   }
 
  &, & * {
@@ -75,6 +76,7 @@
 
   @include breakpoint($not-desktop) {
     margin-bottom: 20px;
+    background-color: $white;
   }
 
   @include breakpoint($tablet) {
@@ -112,7 +114,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        content: '';
+        content: "";
         background-color: rgba(0, 0, 0, 0.4);
         opacity: 0;
         -webkit-transition: opacity 0.6s;
@@ -127,8 +129,8 @@
         z-index: 8;
         top: calc(50% - 28px);
         left: calc(50% - 28px);
-        content: '\e90b';
-        font-family: 'icomoon';
+        content: "\e90b";
+        font-family: "icomoon";
         font-size: 56px;
         width: 56px;
         height: 56px;
@@ -161,7 +163,7 @@
   background-color: rgba(49, 182, 71, 1);
   font-family: $roboto_regular;
   font-size: 15px;
-  color: #fff;
+  color: $white;
   text-decoration: none;
   font-weight: bold;
   @include transitionAll(.6s);

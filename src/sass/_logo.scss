@@ -3,7 +3,7 @@ a.logo {
   max-width: 205px;
   font-size: 0;
   text-decoration: none;
-  color: #fff;
+  color: $white;
   @include transition(all, .3s);
 
   &:hover {
@@ -11,7 +11,7 @@ a.logo {
   }
 
   &:before {
-    content: '\e90b';
+    content: "\e90b";
     display: inline-block;
     float: left;
     margin-right: 16px;
@@ -45,7 +45,7 @@ a.logo {
   font-weight: bold;
   font-size: 52px;
   line-height: 32px;
-  color: #fff;
+  color: $white;
   text-transform: lowercase;
   @include breakpoint($tablet) {
     font-size: 47px;

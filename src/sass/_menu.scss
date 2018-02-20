@@ -28,7 +28,7 @@
 
   .container {
     padding: 10px 0 14px;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid $gray;
   }
 
   .logo {
@@ -54,7 +54,7 @@
         font-weight: bold;
         font-size: 18px;
         text-decoration: none;
-        color: #FFF;
+        color: $white;
 
         &:hover {
           text-decoration: underline;
@@ -64,7 +64,7 @@
       &:after {
         position: relative;
         top: -2px;
-        content: '';
+        content: "";
         margin-left: 24px;
         display: inline-block;
         width: 4px;
@@ -163,7 +163,7 @@
     top: 3px;
     cursor: pointer;
     font-size: 18px;
-    color: #FFFFFF;
+    color: $white;
     @include transition(all, .4s);
   }
 }
@@ -239,10 +239,10 @@
       top: -2px;
       display: inline-block;
       margin-left: 10px;
-      content: '\e900';
+      content: "\e900";
       font-family: "icomoon";
       font-size: 6px;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -262,7 +262,7 @@
         font-family: $roboto_regular;
         font-size: 16px;
         //text-transform: lowercase;
-        color: #fff;
+        color: $white;
 
         &:hover {
           background-color: #222222;
@@ -287,15 +287,15 @@
 
   &:before {
     @include breakpoint($not-desktop) {
-      content: '\e902';
-      font-family: 'icomoon';
+      content: "\e902";
+      font-family: "icomoon";
     }
   }
 }
 
 .mm-opened {
   background-color: $blue;
-  color: #fff;
+  color: $white;
 
   li {
     &:after {
@@ -310,12 +310,12 @@
     }
 
     &:after {
-      border-color: #ffffff !important;
+      border-color: $white !important;
     }
   }
 
   .mm-counter {
-    color: #fff !important;
+    color: $white !important;
   }
 }
 
@@ -388,10 +388,10 @@
     right: calc(66% + 20px);
     display: block;
     opacity: 0;
-    content: '\e909';
-    font-family: 'icomoon';
+    content: "\e909";
+    font-family: "icomoon";
     font-size: 16px;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -419,5 +419,5 @@
 }
 
 .mm-menu .mm-btn:before {
-  border-color: #fff !important;
+  border-color: $white !important;
 }
